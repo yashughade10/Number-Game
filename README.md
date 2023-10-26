@@ -1,10 +1,10 @@
-## Number-Game
+# Number-Game
 Guess the Number Game with JavaScript
 
-# Description : 
+## Description : 
 Introducing the "Guess the Number" game, built using JavaScript! This interactive and engaging game is designed to entertain and challenge players of all ages. Here's a brief overview of the game:
 
-How to Play:
+### How to Play:
 
 Objective: The objective of the game is simple - guess the secret number chosen by the computer.
 
