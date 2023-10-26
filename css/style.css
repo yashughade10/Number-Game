@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins&family=Roboto&family=Volkhov&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(./joystix\ monospace.otf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(./Minecraft.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+    /* font-family: 'Pixelify Sans', sans-serif; */
+    font-family: myFont;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#again-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 25px;
+    font-family: myFont;
+    font-size: 20px;
+}
+
+#check-btn {
+    font-family: myFont;
+}
+
+.btwn {
+    font-size: 20px;
+}
+
+#hiddenNum {
+    border: 1px solid white;
+    padding: 20px 45px;
+    position: relative;
+    left: 650px;
+    background-color: white;
+    color: black;
+    font-size: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+hr {
+    margin-top: -60px;
+    border: 6px solid white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 150px;
+}
+
+.leftContent {
+    margin-top: -20px;
+    /* margin-left: -50px; */
+    place-content: center;
+    display: grid;
+}
+
+input {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 40px;
+}
+
+#check-btn {
+    width: 125px;
+    height: 40px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.rightContent {
+    margin-left: 150px;
+    margin-top: -80px;
+    font-size: 20px;
+    place-content: center;
+}
+#writehere{
+    margin-bottom: 100px;
+}

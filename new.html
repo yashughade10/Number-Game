@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <button type="button" class="again" onclick="btn">Again!</button>
+        <p style="color: #fff;">
+            < Between 1 to 20>
+        </p>
+    </header>
+
+    <section>
+        <h1 style="text-align: center; color: #fff;">Guess My Number!</h1>
+        <p id="box1" style="text-align: center;">?</p>
+        <p id="box2" style="text-align: center;"></p>
+    </section>
+
+    <main>
+        <div class="flex1">
+            <input type="number" id="num">
+            <button type="button" class="checkb" id="check">Check!</button>
+        </div>
+
+        <div class="flex2">
+            <p style="color: black;" id="low">Too Low!</p>
+            <p style="color: black;" id="high">Too High!</p>
+            <p style="color: black;" id="empty">Plese Eneter the positive value!</p>
+            <p style="color: black;" id="lost">You Lost The Game</p>
+            <p style="color: black;" id="won">You Won The Game</p>
+            <p style="color: black;">Start Guessing...</p>
+            <p style="color: black;">Score: <span id="score">20</span></p>
+            <p style="color: black;">HighScore: <span id="highscore"></span></p>
+        </div>
+    </main>
+    <script>
+        const randomn = Math.floor(Math.random() * 10);
+        console.log(randomn);
+        const check = document.getElementById("check");
+        const box = document.getElementById("box2");
+        const low = document.getElementById("low")
+        const empty = document.getElementById("empty");
+        const won = document.getElementById("won");
+        const high = document.getElementById("high");
+        const score = document.getElementById("score");
+        const highscore = document.getElementById("highscore");
+
+        empty.style.display = "none";
+        won.style.display = "none";
+        high.style.display = "none";
+        low.style.display = "none";
+
+        let scr = 20;
+        let high1=0;
+        // score.innerHTML = scores;
+
+        check.addEventListener('click', () => {
+            let num = document.getElementById("num").value;
+            if (num == "") {
+                empty.style.display = "block";
+                low.style.display = "none";
+                high.style.display = "none";
+                score.innerHTML = scr;
+            } else if (num == randomn) {
+                scr-=1;
+                box.innerHTML = randomn;
+                empty.style.display = "none";
+                won.style.display = "block";
+                score.innerHTML = scr;
+                if(scr > high1){
+                    high1 = scr;
+                }
+                highscore.innerHTML = high1;
+            } else if (num > randomn) {
+                high.style.display = "block";
+                low.style.display = "none";
+                scr-=1;
+                score.innerHTML = scr;
+            } else if (num < randomn) {
+                high.style.display = "none";
+                low.style.display = "block";
+                scr-=1;
+                score.innerHTML = scr;
+            }
+        });
+    </script>
+</body>
+
+</html>
