@@ -8,9 +8,9 @@ Introducing the "Guess the Number" game, built using JavaScript! This interactiv
 
 Objective: The objective of the game is simple - guess the secret number chosen by the computer.
 
-Set the Range: Before you start, you can set the range of numbers you want to play with. For example, you can choose to guess a number between 1 and 100, or you can make it more challenging by expanding the range.
+Set the Range: The range of the number is predefined (In our case it is between 1 and 20 inclusive)
 
-Make a Guess: Enter your guess in the input field and click the "Submit" button. The game will provide you with feedback, letting you know if your guess is too high or too low.
+Make a Guess: Enter your guess in the input field and click the "Check" button. The game will provide you with feedback, letting you know if your guess is too high or too low.
 
 Hints: Don't worry if you're struggling to find the number; the game will provide you with hints to help you narrow down your guesses.
 
